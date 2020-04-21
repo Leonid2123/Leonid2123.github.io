@@ -372,7 +372,7 @@ mark{
 @media screen and (max-width: 1141px){
 	.boxline{
 		grid-template-rows: auto auto;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 50% 50%;
 	}
 }
 @media screen and (max-width: 688px){
