@@ -1,0 +1,55 @@
+.nav{
+  margin-right: 10px;
+  background-color: #dee3e2;
+  z-index: 20;
+  box-shadow: 
+  -1px -1px rgb(196, 200, 199), /*-1px -1px rgb(200,200,200),*/
+  -2px -2px rgb(196, 200, 199), /*-2px -2px rgb(200,200,200),*/
+  -3px -3px rgb(196, 200, 199), /*-3px -3px rgb(200,200,200),*/
+  -4px -4px rgb(196, 200, 199), /*-4px -4px rgb(200,200,200),*/
+  -5px -5px rgb(196, 200, 199), /*-5px -5px rgb(200,200,200),*/
+  -6px -6px rgb(196, 200, 199), /*-6px -6px rgb(200,200,200),*/
+  -7px -7px rgb(196, 200, 199), /*-7px -7px rgb(200,200,200),*/
+  -8px -8px rgb(196, 200, 199); /*-8px -8px rgb(200,200,200);*/
+ /*-8px -8px 0px -1px #edeeef;*/
+}
+.content{
+  margin-right: 10px;
+  background-color: #dee3e2;
+  z-index: 10;
+  box-shadow:
+  -1px -0px rgb(196, 200, 199), -1px -1px rgb(255,255,255),
+  -2px -1px rgb(196, 200, 199), -2px -2px rgb(255,255,255),
+  -3px -2px rgb(196, 200, 199), -3px -3px rgb(255,255,255),
+  -4px -3px rgb(196, 200, 199), -4px -4px rgb(255,255,255),
+  -5px -4px rgb(196, 200, 199), -5px -5px rgb(255,255,255),
+  -6px -5px rgb(196, 200, 199), -6px -6px rgb(255,255,255),
+  -7px -6px rgb(196, 200, 199), -7px -7px rgb(255,255,255),
+  -8px -7px rgb(196, 200, 199), -8px -8px rgb(255,255,255);
+
+}
+.niceline{box-shadow: /*0 149 168*/
+  -2px -0px rgb(196, 101, 25), -1px -1px rgb(237,238,239),
+  -3px -1px rgb(196, 101, 25), -2px -2px rgb(237,238,239),
+  -4px -2px rgb(196, 101, 25), -3px -3px rgb(237,238,239),
+  -5px -3px rgb(196, 101, 25), -4px -4px rgb(237,238,239),
+  -6px -4px rgb(196, 101, 25), -5px -5px rgb(237,238,239),
+  -7px -5px rgb(196, 101, 25), -6px -6px rgb(237,238,239),
+  -8px -6px rgb(196, 101, 25), -7px -7px rgb(237,238,239),
+  -9px -7px rgb(196, 101, 25), -8px -8px rgb(237,238,239);
+ /*-8px -8px 0px -1px #e9be34;*/
+ margin-left: 1px;
+}
+@media screen and (max-width: 600px){
+  .nav{
+    box-shadow: 
+  0px -1px rgb(196, 200, 199), /*-1px -1px rgb(200,200,200),*/
+  0px -2px rgb(196, 200, 199), /*-2px -2px rgb(200,200,200),*/
+  0px -3px rgb(196, 200, 199), /*-3px -3px rgb(200,200,200),*/
+  0px -4px rgb(196, 200, 199), /*-4px -4px rgb(200,200,200),*/
+  0px -5px rgb(196, 200, 199), /*-5px -5px rgb(200,200,200),*/
+  0px -6px rgb(196, 200, 199), /*-6px -6px rgb(200,200,200),*/
+  0px -7px rgb(196, 200, 199), /*-7px -7px rgb(200,200,200),*/
+  0px -8px rgb(196, 200, 199); /*-8px -8px rgb(200,200,200);*/
+}
+}

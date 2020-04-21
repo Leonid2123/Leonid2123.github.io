@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animation.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<!-- --><script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/wow.min.js"></script>
+	<script src="js/count.js"></script>
+	<script type="text/javascript" src="//vk.com/js/api/openapi.js?126"></script>
+	<script type="text/javascript">
+		VK.init({apiId: 2951023, onlyWidgets: true});
+	</script>
+	<script>
+		new WOW().init();
+	</script>
+</head>
+<body id="body">
+	<div class="container">
+		<img class="logo" src="img/meinlogoohnezeichen.png">
+		<div class="left_side">
+			<div class="div">
+				<img class="light wow animated tada" src="img/meinlogoohnezeichengrkl.png">
+			</div>
+		</div>
+		<div class="nav">
+			<div><p class="wow animated fadeInDown" id="but1">About Me</p></div>
+			<div><p class="wow animated fadeInDown" id="but2">Resume</p></div>
+			<div><p class="wow animated fadeInDown" id="but3">Works</p></div>
+			<div><p class="wow animated fadeInDown" id="but4">Contact</p></div>
+			<img class="setimage" src="img/settings.png">
+		</div>
+		<div class="open">
+			<div>Choose Main Color</div>
+			<div class="color color1"></div>
+			<div class="color color2"></div>
+			<div class="color color3"></div>
+		</div>
+		<div class="content">
+			<div class="niceline">
+				<div id="lt1" class="linetext">About Me</div>
+				<div id="lt2" class="linetext">Resume</div>
+				<div id="lt3" class="linetext">Works</div>
+				<div id="lt4" class="linetext">Contact</div>
+			</div>
+			<div class="article artabout">
+				<div>
+					<p class="tex3">I am Web Developer</p><p>My name is Leo. I`m 14 and i`m initial Web-Developer. I`m living and studying in the ukrainian city called Ivano-Frankivsk. I also study for a fourth year at a computer school. I have experience working in a team and with customers.</p></div>
+
+					<div></div>
+				<!--<div class="testimonials">
+						<p class="tex3">Testimonials</p>
+					</div>-->
+				<div>
+					<p class="tex3">Services</p>
+					<div class="boxline">
+						<div class="box">
+							<img src="img/colordesign.png">
+							Design
+						</div>
+						<div class="box">
+							<img src="img/colordata.png">
+							Development
+						</div>
+						<div class="box">
+							<img src="img/coloraudit.png">
+							Branding
+						</div>
+						<div class="box">
+							<img src="img/colorconsult.png">
+							Contulting
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="article artskills"><div class="part"><p class="tex3">I have some skills in Web-Development. They are</p>
+				<div class="cont">- <mark>HTML</mark> - <p class="counter">80</p>%</div>
+				<div class="cont">- <mark>CSS</mark> - <p class="counter">68</p>%</div>
+				<div class="cont">- <mark>JS</mark> - <p class="counter">12</p>%</div>
+				<div class="cont">- <mark>CSS Flexfox</mark> - <p class="counter">85</p>%</div>
+				<div class="cont">- <mark>CSS Grid Layout</mark> - <p class="counter">80</p>%</div></div>
+				<div class="part p2"><p class="tex3">There are Languages i can speak:</p>
+				<div class="cont">- <mark>Ukrainian</mark> - <p class="counter">95</p>%</div>
+				<div class="cont">- <mark>Russian</mark> - <p class="counter">90</p>%</div>
+				<div class="cont">- <mark>Deutsch</mark> - <p class="counter">40</p>%</div>
+				<div class="cont">- <mark>English</mark> - <p class="counter">35</p>%</div>
+			</div></div>
+
+			<div class="article artworks"><p class="tex3 long">There are my Works</p>
+				<div class="not">
+				<img src="img/arrow.png" class="button btn1 btn1_1">
+				<div class="button btn1 btn1_2">1</div>
+				<div class="workline wl1">
+					<img class="wimg1" src="img/work5.png">
+					<img class="wimg2 minimargin" src="img/work4.png">
+					<img class="wimg3" src="img/work3.png">
+				</div>
+				<div class="workline wl2">
+					<img class="wimg4" src="img/work6.png">
+					<img class="wimg5 minimargin" src="img/work1.png">
+					<img class="wimg6" src="img/work2.png">
+				</div>
+				<img src="img/arrow.png" class="button btn2 btn2_1">
+				<div class="button btn2 btn2_2">2</div>
+			</div>
+			</div>
+
+			<div class="article artcontacts">
+				<p class="tex3">My contacts</p>
+				<div class="row"><img src="img/place.png"><div>Ivano-Frankivsk, Ukraine</div></div>
+				<div class="row minimarg"><img src="img/mail.png"><div>leokarelsky@gmail.com</div></div>
+				<div class="row"><img src="img/phone.png"><div>+380508849214</div></div>
+
+				<form style="grid-row: 1/5;grid-column: 2/3;font-family: 'Nova';color: black;font-size: 16pt;" action="send.php" method="post">
+					Name:  <input type="text" name="first_name"><br>
+					Email:  <input type="text" name="email" required placeholder="*"><br>
+					Letter:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+			</div>
+		</div></div>
+		<div class="work w1">
+			<a title="Десятипальцевий Друк" href="file:///F:/4%20%D0%BA%D0%BB%D0%B0%D1%81/%D0%B4%D1%80%D1%83%D0%BA/%D0%B4%D1%80%D1%83%D0%BA-final/index.html"><img src="img/work5.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>I developed this project in a team commissioned by SHKM for young children</div>
+			</div>
+		</div>
+		<div class="work w2">
+			<a title="Бібліотека" href="file:///F:/4%20%D0%BA%D0%BB%D0%B0%D1%81/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%822/index.html"><img src="img/work4.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>I developed this project in a team commissioned by Library</div>
+			</div>
+		</div>
+		<div class="work w3">
+			<a title="Екологія" href="file:///F:/3%20%D0%BA%D0%BB%D0%B0%D1%81/%D0%BF%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%95%D0%BA%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D1%8F3/main.html"><img src="img/work3.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>I developed this project in a team commissioned by New Energy</div>
+			</div>
+		</div>
+		<div class="work w4">
+			<a title="Новий Рік" href="file:///F:/3%20%D0%BA%D0%BB%D0%B0%D1%81/%D0%BF%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%BD%D1%96%20%D1%80%D0%BE%D0%B1%D0%BE%D1%82%D0%B8/%D0%BD%D0%BE%D0%B2%D0%B8%D0%B9%20%D1%80%D1%96%D0%BA/index.html"><img src="img/work6.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>This is my creative work</div>
+			</div>
+		</div>
+		<div class="work w5">
+			<a title="СКМ" href="file:///F:/2%D0%BA%D0%BB%D0%B0%D1%81/2%20%D0%A1%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8/html_css_karelsky/index.html"><img src="img/work1.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>I developed this project in a team commissioned by SHKM</div>
+			</div>
+		</div>
+		<div class="work w6">
+			<a title="Обличчям ло Технологій" href="file:///F:/3%20%D0%BA%D0%BB%D0%B0%D1%81/%D0%BF%D0%B5%D1%80%D1%88%D0%B8%D0%B9%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/%D0%9E%D0%B1%D0%BB%D0%B8%D1%87%D1%87%D1%8F%D0%BC%20%D0%B4%D0%BE%20%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D1%96%D0%B9/main.html"><img src="img/work2.png"></a>
+			<div class="info">
+				<p class="tex3">Description:</p>
+				<div>I developed this project in a team commissioned by SHKM</div>
+			</div>
+		</div>
+	<script type="text/javascript">
+		$('.work').hide();
+		$('.wimg1').click(function(){
+			$('.w1').fadeIn(200);
+		});
+		$('.wimg2').click(function(){
+			$('.w2').fadeIn(200);
+		});
+		$('.wimg3').click(function(){
+			$('.w3').fadeIn(200);
+		});
+		$('.wimg4').click(function(){
+			$('.w4').fadeIn(200);
+		});
+		$('.wimg5').click(function(){
+			$('.w5').fadeIn(200);
+		});
+		$('.wimg6').click(function(){
+			$('.w6').fadeIn(200);
+		});
+		$('.w1').click(function(){
+			$('.w1').fadeOut(200);
+		});
+		$('.w2').click(function(){
+			$('.w2').fadeOut(200);
+		});
+		$('.w3').click(function(){
+			$('.w3').fadeOut(200);
+		});
+		$('.w4').click(function(){
+			$('.w4').fadeOut(200);
+		});
+		$('.w5').click(function(){
+			$('.w5').fadeOut(200);
+		});
+		$('.w6').click(function(){
+			$('.w6').fadeOut(200);
+		});
+
+
+		$('.open').hide();
+		$('.setimage').click(function(){
+			$('.open').fadeToggle(200);
+		});
+		$('.workline').not(':first').hide();
+		$('.btn1').click(function(){
+			$('.wl1').fadeToggle(0);
+			$('.wl2').fadeToggle(0);
+		});
+		$('.btn2').click(function(){
+			$('.wl1').fadeToggle(0);
+			$('.wl2').fadeToggle(0);
+		});
+		$('.article').not(':first').hide();
+		$('.linetext').not(':first').hide();
+		$('#but1').click(function(){
+			$('#lt1').fadeIn(200);
+			$('#lt2').fadeOut(200);
+			$('#lt3').fadeOut(200);
+			$('#lt4').fadeOut(200);
+			$('.artabout').fadeIn(200);
+			$('.artskills').fadeOut(0);
+			$('.artworks').fadeOut(0);
+			$('.artcontacts').fadeOut(0);
+		});
+		$('#but2').click(function(){
+			$('#lt1').fadeOut(200);
+			$('#lt2').fadeIn(200);
+			$('#lt3').fadeOut(200);
+			$('#lt4').fadeOut(200);
+			$('.artabout').fadeOut(0);
+			$('.artskills').fadeIn(200);
+			$('.artworks').fadeOut(0);
+			$('.artcontacts').fadeOut(0);
+		});
+		$('#but3').click(function(){
+			$('#lt1').fadeOut(200);
+			$('#lt2').fadeOut(200);
+			$('#lt3').fadeIn(200);
+			$('#lt4').fadeOut(200);
+			$('.artabout').fadeOut(0);
+			$('.artskills').fadeOut(0);
+			$('.artworks').fadeIn(200);
+			$('.artcontacts').fadeOut(0);
+		});
+		$('#but4').click(function(){
+			$('#lt1').fadeOut(200);
+			$('#lt2').fadeOut(200);
+			$('#lt3').fadeOut(200);
+			$('#lt4').fadeIn(200);
+			$('.artabout').fadeOut(0);
+			$('.artskills').fadeOut(0);
+			$('.artworks').fadeOut(0);
+			$('.artcontacts').fadeIn(200);
+		});
+		$('.color1').click(function(){
+			$('body').attr('style', 'background: #18b0b0;');
+			$('.left_side').attr('style', 'background: #18b0b0;');
+			$('.button').attr('style', 'background: #de7119;');
+			$('.niceline').attr('style', 'background: #de7119; box-shadow:-2px -0px rgb(196, 101, 25), -1px -1px rgb(237,238,239),-3px -1px rgb(196, 101, 25), -2px -2px rgb(237,238,239),-4px -2px rgb(196, 101, 25), -3px -3px rgb(237,238,239),-5px -3px rgb(196, 101, 25), -4px -4px rgb(237,238,239),-6px -4px rgb(196, 101, 25), -5px -5px rgb(237,238,239),-7px -5px rgb(196, 101, 25), -6px -6px rgb(237,238,239),-8px -6px rgb(196, 101, 25), -7px -7px rgb(237,238,239),-9px -7px rgb(196, 101, 25), -8px -8px rgb(237,238,239);');
+		});
+		$('.color2').click(function(){
+			$('body').attr('style', 'background: #1a002f;');
+			$('.left_side').attr('style', 'background: #1a002f;');
+			$('.button').attr('style', 'background: #d7385e;');
+			$('.niceline').attr('style', 'background: #d7385e; box-shadow:-2px -0px rgb(181, 45, 77), -1px -1px rgb(237,238,239),-3px -1px rgb(181, 45, 77), -2px -2px rgb(237,238,239),-4px -2px rgb(181, 45, 77), -3px -3px rgb(237,238,239),-5px -3px rgb(181, 45, 77), -4px -4px rgb(237,238,239),-6px -4px rgb(181, 45, 77), -5px -5px rgb(237,238,239),-7px -5px rgb(181, 45, 77), -6px -6px rgb(237,238,239),-8px -6px rgb(181, 45, 77), -7px -7px rgb(237,238,239),-9px -7px rgb(181, 45, 77), -8px -8px rgb(237,238,239);');
+		});
+		$('.color3').click(function(){
+			$('body').attr('style', 'background: #ff5722;');
+			$('.left_side').attr('style', 'background: #ff5722;');
+			$('.button').attr('style', 'background: #00bcd4;');
+			$('.niceline').attr('style', 'background: #00bcd4; box-shadow:-2px -0px rgb(0, 149, 168), -1px -1px rgb(237,238,239),-3px -1px rgb(0, 149, 168), -2px -2px rgb(237,238,239),-4px -2px rgb(0, 149, 168), -3px -3px rgb(237,238,239),-5px -3px rgb(0, 149, 168), -4px -4px rgb(237,238,239),-6px -4px rgb(0, 149, 168), -5px -5px rgb(237,238,239),-7px -5px rgb(0, 149, 168), -6px -6px rgb(237,238,239),-8px -6px rgb(0, 149, 168), -7px -7px rgb(237,238,239),-9px -7px rgb(0, 149, 168), -8px -8px rgb(237,238,239);');
+		});
+	</script>
+</body>
+</html>
