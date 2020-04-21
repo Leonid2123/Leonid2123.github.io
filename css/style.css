@@ -424,6 +424,9 @@ mark{
 	}
 }
 @media screen and (max-width: 600px){
+	.setimage{
+		display:none;
+	}
 	.container{
 		display: flex;
 		flex-direction: column;
@@ -447,6 +450,7 @@ mark{
 	.logo{
 		display: block;
 		margin-bottom: 0;
+		width: 100%;
 	}
 	.nav{
 		margin-top: 0;
@@ -469,6 +473,9 @@ mark{
 	}
 	.w3, .w6{
 		top: 195%;
+	}
+	.artabout{
+		grid-template-columns: 100% 0%;
 	}
 }
 @media screen and (max-width: 350px){
