@@ -245,6 +245,7 @@ a{
 .color2{background-color: #1a002f; /*#e7d39f;*/ /*#fb7b6b;*/}
 .color3{background-color: #ff5722;}
 .boxline{
+	width:100%;
 	display: grid;
 	flex-wrap: wrap;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
