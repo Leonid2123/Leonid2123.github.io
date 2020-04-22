@@ -373,6 +373,7 @@ mark{
 	}
 	.part{
 		width: 80%;
+		margin-bottom: 30px;
 	}
 }
 @media screen and (max-width: 1141px){
