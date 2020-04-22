@@ -265,7 +265,7 @@ a{
 	/*border: 1px solid #787878;*/
 }
 .box img{
-	width: auto;
+	width: 100%;
 	margin-bottom: 5px;
 }
 mark{
@@ -384,7 +384,7 @@ input{
 @media screen and (max-width: 1141px){
 	.boxline{
 		grid-template-rows: auto auto;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 40% 40%;
 	}
 }
 @media screen and (max-width: 688px){
