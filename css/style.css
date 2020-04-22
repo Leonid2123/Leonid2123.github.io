@@ -265,7 +265,7 @@ a{
 	/*border: 1px solid #787878;*/
 }
 .box img{
-	width: 100%;
+	width: auto;
 	margin-bottom: 5px;
 }
 mark{
