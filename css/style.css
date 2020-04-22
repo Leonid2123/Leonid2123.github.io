@@ -384,7 +384,7 @@ input{
 @media screen and (max-width: 1141px){
 	.boxline{
 		grid-template-rows: auto auto;
-		grid-template-columns: 40% 40%;
+		grid-template-columns: max-content max-content;
 		margin-right: 5px;
 	}
 }
