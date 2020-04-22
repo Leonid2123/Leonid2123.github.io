@@ -368,6 +368,12 @@ mark{
 	.artcontacts form{
 		margin-top: 20px;
 	}
+	.artskills{
+		flex-direction:column;
+	}
+	.part{
+		width: 80%;
+	}
 }
 @media screen and (max-width: 1141px){
 	.boxline{
