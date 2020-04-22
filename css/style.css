@@ -357,7 +357,10 @@ mark{
 	grid-template-rows: auto auto auto auto;
 	grid-template-columns: 50% 50%;
 }
-
+input{
+	padding:5px;
+	font-size: 14pt;
+}
 
 
 @media screen and (max-width: 569px){
