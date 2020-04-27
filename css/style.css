@@ -361,6 +361,7 @@ mark{
 	grid-row: 1/5;
 	grid-column: 2/3;
 	font-family: 'Nova';
+	margin-top: 20px;
 	color: black;
 	display: grid;
 	grid-template-rows: 40px 40px 40px;
