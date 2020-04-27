@@ -398,8 +398,14 @@ textarea{
 		display: flex;
 		flex-direction: column;
 	}
-	.artcontacts form{
+	.form{
 		margin-top: 20px;
+		padding-right: 10px;
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto auto auto;
+	}
+	.sumb{
+		grid-column: 1/2;
 	}
 	.artskills{
 		flex-direction:column;
