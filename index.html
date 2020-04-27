@@ -122,12 +122,12 @@
 				<div class="row minimarg"><img src="img/mail.png"><div>leokarelsky@gmail.com</div></div>
 				<div class="row"><img src="img/phone.png"><div>+380508849214</div></div>
 
-				<form style="grid-row: 1/5;grid-column: 2/3;font-family: 'Nova';color: black;font-size: 16pt;" action="send.php" method="post">
-					Name:  <input type="text" name="first_name"><br>
-					Email:  <input type="text" name="email" required placeholder="*"><br>
-					Letter:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-					<input type="submit" name="submit" value="Submit">
-				</form>
+				<div class="form">
+					<input type="text" id="input-name" placeholder="Name">
+					<input type="text" id="input-name" placeholder="E-mail">
+					<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+					<input class="sumb" type="submit" value="Submit" id="input-submit">
+				</div>
 			</div>
 		</div></div>
 		<div class="work w1">
