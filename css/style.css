@@ -357,9 +357,39 @@ mark{
 	grid-template-rows: auto auto auto auto;
 	grid-template-columns: 50% 50%;
 }
+.form{
+	grid-row: 1/5;
+	grid-column: 2/3;
+	font-family: 'Nova';
+	color: black;
+	display: grid;
+	grid-template-rows: 40px 40px 40px;
+	grid-template-columns: 50% 50%;
+	grid-gap: 10px;
+	font-size: 16pt;
+}
 input{
-	padding:5px;
 	font-size: 14pt;
+	padding: 10px;
+}
+textarea{
+	grid-column: 2/3;
+	grid-row: 1/3;
+	font-size: 14pt;
+	padding: 10px;
+}
+.sumb{
+	grid-column: 1/3;
+	padding: 0;
+	border: none;
+	font-size: 18pt;
+	color: white;
+	background-color: #de7119;
+	font-family: "Nova";
+	letter-spacing: 0.5px;
+}
+.sumb:hover{
+	cursor: pointer;
 }
 
 
