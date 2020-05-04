@@ -1,4 +1,48 @@
 <!DOCTYPE html>
+<?php
+    $msg_box = ""; // в этой переменной будем хранить сообщения формы
+     
+    if($_POST['btn_submit']){
+        $errors = array(); // контейнер для ошибок
+        // проверяем корректность полей
+        if($_POST['user_name'] == "")    $errors[] = "*";
+        if($_POST['user_email'] == "")   $errors[] = "*";
+        if($_POST['text_comment'] == "") $errors[] = "*";
+ 
+        // если форма без ошибок
+        if(empty($errors)){     
+            // собираем данные из формы
+            $message  = "Имя пользователя: " . $_POST['user_name'] . "<br/>";
+            $message .= "E-mail пользователя: " . $_POST['user_email'] . "<br/>";
+            $message .= "Текст письма: " . $_POST['text_comment'];      
+            send_mail($message); // отправим письмо
+            // выведем сообщение об успехе
+            $msg_box = "<span style='color: green;'>Sucsessful</span>";
+        }else{
+            // если были ошибки, то выводим их
+            $msg_box = "";
+            foreach($errors as $one_error){
+                $msg_box .= "<span style='color: red;'>$one_error</span><br/>";
+            }
+        }
+    }
+     
+    // функция отправки письма
+    function send_mail($message){
+        // почта, на которую придет письмо
+        $mail_to = "leokarelsky@gmail.com"; 
+        // тема письма
+        $subject = "Feedback letter";
+         
+        // заголовок письма
+        $headers= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-type: text/html; charset=utf-8\r\n"; // кодировка письма
+        $headers .= "From: Тестовое письмо <no-reply@test.com>\r\n"; // от кого письмо
+         
+        // отправляем письмо 
+        mail($mail_to, $subject, $message, $headers);
+    }
+?>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -118,11 +162,11 @@
 				<div class="row minimarg"><img alt="Image" src="img/mail.png"><div>leokarelsky@gmail.com</div></div>
 				<div class="row"><img alt="Image" src="img/phone.png"><div>+380508849214</div></div>
 
-				<form class="form" action="send.php" method="get">
-					<input type="text" id="input-name" placeholder="Name" name="e-mail">
-					<input type="text" id="input-name" placeholder="E-mail" name="name">
-					<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-					<input class="sumb" type="submit" value="Submit" id="input-submit">
+				<form class="form" action="<?=$_SERVER['PHP_SELF'];?>" method="post" name="frm_feedback">
+					<input type="text" placeholder="E-mail" name="user_email" value="<?=($_POST['user_email']) ? $_POST['user_email'] : ""; // сохраняем то, что вводили?>">
+					<input type="text" placeholder="Name" name="user_name" value="<?=($_POST['user_name']) ? $_POST['user_name'] : ""; // сохраняем то, что вводили?>">
+					<textarea name="text_comment"><?=($_POST['text_comment']) ? $_POST['text_comment'] : ""; placeholder="Message"></textarea>
+					<input class="sumb" type="submit" value="Submit" name="btn_submit">
 				</form>
 				<!--<div class="form">
 					<input type="text" placeholder="Name">
