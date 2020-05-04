@@ -118,12 +118,18 @@
 				<div class="row minimarg"><img alt="Image" src="img/mail.png"><div>leokarelsky@gmail.com</div></div>
 				<div class="row"><img alt="Image" src="img/phone.png"><div>+380508849214</div></div>
 
-				<div class="form">
+				<form class="form" action="send.php" method="get">
+					<input type="text" id="input-name" placeholder="Name" name="e-mail">
+					<input type="text" id="input-name" placeholder="E-mail" name="name">
+					<textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+					<input class="sumb" type="submit" value="Submit" id="input-submit">
+				</form>
+				<!--<div class="form">
 					<input type="text" placeholder="Name">
 					<input type="text" placeholder="E-mail">
 					<textarea name="message" placeholder="Message"></textarea>
 					<input class="sumb" type="submit" value="Submit" id="input-submit">
-				</div>
+				</div>-->
 			</div>
 		</div></div>
 		<div class="work w1">
